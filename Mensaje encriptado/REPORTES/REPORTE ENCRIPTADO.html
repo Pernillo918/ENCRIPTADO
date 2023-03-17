@@ -1,0 +1,288 @@
+<HTML>
+<title> REPORTE ENCRIPTADO </title>
+<body style="background-color: white; text-align: justify;">
+<style type="text/css">
+h1 { color: white; size: 17; background-color: black; font-family: Tahoma; }
+b {color:black; size: 12; justify; font-family: Tahoma
+</style>
+<center><h1> ENCRIPTADO </h1></center>
+
+
+
+<b>El el proceso de Encritado se realizaron operaciones entre matriz tales como la multiplicacion de la matriz A por la matriz mensaje y la suma de la matriz B para obtener la matriz C(A*M +B = C) con la finalidad de mostrarla matriz que contiene el mensaje que el usuario ingreso.</b>
+<br>
+<br>
+<b>Se obtuvo atravez del  proceso de codificacion  la conversion de un mensaje ingresado por el usuario a numeros utilizando una funcion Swtich que contiene los valores para cada letra,la conversion del mensaje a mayusculas con la funcion <u>.toUpperCase</u>, almacenando esA conversion en un vector, realizando la lectura de dicho vector con la funcion <u>.length</u>, la conversion de los valores a  char con la  funcion <u>String.valueOf(NombreVector.charAt(i))</u> y finalmente con la ayuda de un For se realizo la conversion llamando al metodo que almacena el switch donde finalmente se obtuvo:</b>
+<br>
+<br>
+<b>El mensaje que ingreso fue:</b> MENSAJE PRUEBA
+<br>
+<br>
+<b>La conversion de letras a numeros que se realizo fue:</b>
+<br>
+<b>M  =  12	</b><b>E  =  4	</b><b>N  =  13	</b><b>S  =  19	</b><b>A  =  0	</b><b>J  =  9	</b><b>E  =  4	</b><b>   =  27	</b><b>P  =  16	</b><b>R  =  18	</b><b>U  =  21	</b><b>E  =  4	</b><b>B  =  1	</b><b>A  =  0	</b><br>
+<br>
+<br>
+<b>Se realizo el llenado de la matriz mensaje con los valores correspientes para cada letra(el llanado de la matriz fue de columnas a filas) la matriz obtenida fue:</b>
+</b></b><center>
+<table class="default">
+<tr>
+<td><b	>12  &nbsp&nbsp&nbsp</b></td>
+<td><b	>19  &nbsp&nbsp&nbsp</b></td>
+<td><b	>4  &nbsp&nbsp&nbsp</b></td>
+<td><b	>18  &nbsp&nbsp&nbsp</b></td>
+<td><b	>1  &nbsp&nbsp&nbsp</b></td>
+</tr>
+<tr>
+<td><b	>4  &nbsp&nbsp&nbsp</b></td>
+<td><b	>0  &nbsp&nbsp&nbsp</b></td>
+<td><b	>27  &nbsp&nbsp&nbsp</b></td>
+<td><b	>21  &nbsp&nbsp&nbsp</b></td>
+<td><b	>0  &nbsp&nbsp&nbsp</b></td>
+</tr>
+<tr>
+<td><b	>13  &nbsp&nbsp&nbsp</b></td>
+<td><b	>9  &nbsp&nbsp&nbsp</b></td>
+<td><b	>16  &nbsp&nbsp&nbsp</b></td>
+<td><b	>4  &nbsp&nbsp&nbsp</b></td>
+<td><b	>27  &nbsp&nbsp&nbsp</b></td>
+</tr>
+</table>
+</center>
+<br>
+<br>
+<b>Se crearon los metodos <u>MA</u> y <u>MB</u> correspondiendo uno a la Matriz A y el otro a la Matriz B en cada metodo se ulizaron las funciones <u> File, FileReader y  BufferedReader</u>para solicitar al usuario digitara la ubicacion del archivo de texto que contenida cada una de las matrices. En la lectura del archivo de texto para almacenarlo en una matriz (Matriz A 3x3, Matriz B 3xn) para realizarlo se empleo un ciclo while, un contador y donde se le indico al programa que el cambio de valor estaria indicado por una coma(se utlizo la funcion <u> .split(,)</u>)  y que el contador aumentaria su valor en 1 al realizar el cambio de fila y finalmente se obtuvo:  </b>
+<br>
+<br>
+<center>
+<table class="default">
+<tr>
+<td>
+<b> Matriz A</b> 			<table class="table table-dark">
+<tr>
+<td><b	>2&nbsp&nbsp&nbsp</b></td>
+<td><b	>1&nbsp&nbsp&nbsp</b></td>
+<td><b	>2&nbsp&nbsp&nbsp</b></td>
+</tr>
+<tr>
+<td><b	>-1&nbsp&nbsp&nbsp</b></td>
+<td><b	>5&nbsp&nbsp&nbsp</b></td>
+<td><b	>-1&nbsp&nbsp&nbsp</b></td>
+</tr>
+<tr>
+<td><b	>3&nbsp&nbsp&nbsp</b></td>
+<td><b	>1&nbsp&nbsp&nbsp</b></td>
+<td><b	>6&nbsp&nbsp&nbsp</b></td>
+</tr>
+</table>
+</td>
+<td>
+<b> Matriz B</b> 			<table class="default">
+<tr>
+<td><b	>18&nbsp&nbsp&nbsp</b></td>
+<td><b	>24&nbsp&nbsp&nbsp</b></td>
+<td><b	>71&nbsp&nbsp&nbsp</b></td>
+<td><b	>46&nbsp&nbsp&nbsp</b></td>
+<td><b	>3&nbsp&nbsp&nbsp</b></td>
+</tr>
+<tr>
+<td><b	>91&nbsp&nbsp&nbsp</b></td>
+<td><b	>21&nbsp&nbsp&nbsp</b></td>
+<td><b	>56&nbsp&nbsp&nbsp</b></td>
+<td><b	>92&nbsp&nbsp&nbsp</b></td>
+<td><b	>3&nbsp&nbsp&nbsp</b></td>
+</tr>
+<tr>
+<td><b	>32&nbsp&nbsp&nbsp</b></td>
+<td><b	>25&nbsp&nbsp&nbsp</b></td>
+<td><b	>85&nbsp&nbsp&nbsp</b></td>
+<td><b	>18&nbsp&nbsp&nbsp</b></td>
+<td><b	>85&nbsp&nbsp&nbsp</b></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+<br>
+<br>
+<b>Se realizaron las operaciones entre matrices correspondientes siendo la primera la multiplicacion de lamatriz A por la matriz Mensaje.
+<br>
+<br>
+<center>
+<table class="default">
+<tr>
+<td>
+<b> Matriz A</b> 			<table class="default">
+<tr>
+<td><b	>2 &nbsp&nbsp&nbsp</b></td>
+<td><b	>1 &nbsp&nbsp&nbsp</b></td>
+<td><b	>2 &nbsp&nbsp&nbsp</b></td>
+</tr>
+<tr>
+<td><b	>-1 &nbsp&nbsp&nbsp</b></td>
+<td><b	>5 &nbsp&nbsp&nbsp</b></td>
+<td><b	>-1 &nbsp&nbsp&nbsp</b></td>
+</tr>
+<tr>
+<td><b	>3 &nbsp&nbsp&nbsp</b></td>
+<td><b	>1 &nbsp&nbsp&nbsp</b></td>
+<td><b	>6 &nbsp&nbsp&nbsp</b></td>
+</tr>
+</table>
+</td>
+<td>    &nbsp&nbsp&nbsp    x    &nbsp&nbsp&nbsp    </td>
+<td>
+<b> Matriz M </b> 			<table class="default">
+<tr>
+<td><b	>12 &nbsp&nbsp&nbsp</b></td>
+<td><b	>19 &nbsp&nbsp&nbsp</b></td>
+<td><b	>4 &nbsp&nbsp&nbsp</b></td>
+<td><b	>18 &nbsp&nbsp&nbsp</b></td>
+<td><b	>1 &nbsp&nbsp&nbsp</b></td>
+</tr>
+<tr>
+<td><b	>4 &nbsp&nbsp&nbsp</b></td>
+<td><b	>0 &nbsp&nbsp&nbsp</b></td>
+<td><b	>27 &nbsp&nbsp&nbsp</b></td>
+<td><b	>21 &nbsp&nbsp&nbsp</b></td>
+<td><b	>0 &nbsp&nbsp&nbsp</b></td>
+</tr>
+<tr>
+<td><b	>13 &nbsp&nbsp&nbsp</b></td>
+<td><b	>9 &nbsp&nbsp&nbsp</b></td>
+<td><b	>16 &nbsp&nbsp&nbsp</b></td>
+<td><b	>4 &nbsp&nbsp&nbsp</b></td>
+<td><b	>27 &nbsp&nbsp&nbsp</b></td>
+</tr>
+</table>
+</td>
+<td>      &nbsp&nbsp&nbsp     =   &nbsp&nbsp&nbsp     </td>
+<td>
+<b> Matriz J</b> 			<table class="default">
+<tr>
+<td><b	>54&nbsp&nbsp&nbsp</b></td>
+<td><b	>56&nbsp&nbsp&nbsp</b></td>
+<td><b	>67&nbsp&nbsp&nbsp</b></td>
+<td><b	>65&nbsp&nbsp&nbsp</b></td>
+<td><b	>56&nbsp&nbsp&nbsp</b></td>
+</tr>
+<tr>
+<td><b	>-5&nbsp&nbsp&nbsp</b></td>
+<td><b	>-28&nbsp&nbsp&nbsp</b></td>
+<td><b	>115&nbsp&nbsp&nbsp</b></td>
+<td><b	>83&nbsp&nbsp&nbsp</b></td>
+<td><b	>-28&nbsp&nbsp&nbsp</b></td>
+</tr>
+<tr>
+<td><b	>118&nbsp&nbsp&nbsp</b></td>
+<td><b	>111&nbsp&nbsp&nbsp</b></td>
+<td><b	>135&nbsp&nbsp&nbsp</b></td>
+<td><b	>99&nbsp&nbsp&nbsp</b></td>
+<td><b	>165&nbsp&nbsp&nbsp</b></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+<br>
+<br>
+<b>Finalmente se realizo la suma de matrices entre la matriz J que se obtuvo con la matriz B</b>
+<br>
+<br>
+<center>
+<table class="default">
+<tr>
+<td>
+<b> Matriz J</b> 			<table class="default">
+<tr>
+<td><b	>54  &nbsp&nbsp&nbsp</b></td>
+<td><b	>56  &nbsp&nbsp&nbsp</b></td>
+<td><b	>67  &nbsp&nbsp&nbsp</b></td>
+<td><b	>65  &nbsp&nbsp&nbsp</b></td>
+<td><b	>56  &nbsp&nbsp&nbsp</b></td>
+</tr>
+<tr>
+<td><b	>-5  &nbsp&nbsp&nbsp</b></td>
+<td><b	>-28  &nbsp&nbsp&nbsp</b></td>
+<td><b	>115  &nbsp&nbsp&nbsp</b></td>
+<td><b	>83  &nbsp&nbsp&nbsp</b></td>
+<td><b	>-28  &nbsp&nbsp&nbsp</b></td>
+</tr>
+<tr>
+<td><b	>118  &nbsp&nbsp&nbsp</b></td>
+<td><b	>111  &nbsp&nbsp&nbsp</b></td>
+<td><b	>135  &nbsp&nbsp&nbsp</b></td>
+<td><b	>99  &nbsp&nbsp&nbsp</b></td>
+<td><b	>165  &nbsp&nbsp&nbsp</b></td>
+</tr>
+</table>
+</td>
+<td>    &nbsp&nbsp&nbsp     +     &nbsp&nbsp&nbsp     </td>
+<td>
+<b> Matriz B  </b> 			<table class="default">
+<tr>
+<td><b	>18 &nbsp&nbsp&nbsp</b></td>
+<td><b	>24 &nbsp&nbsp&nbsp</b></td>
+<td><b	>71 &nbsp&nbsp&nbsp</b></td>
+<td><b	>46 &nbsp&nbsp&nbsp</b></td>
+<td><b	>3 &nbsp&nbsp&nbsp</b></td>
+</tr>
+<tr>
+<td><b	>91 &nbsp&nbsp&nbsp</b></td>
+<td><b	>21 &nbsp&nbsp&nbsp</b></td>
+<td><b	>56 &nbsp&nbsp&nbsp</b></td>
+<td><b	>92 &nbsp&nbsp&nbsp</b></td>
+<td><b	>3 &nbsp&nbsp&nbsp</b></td>
+</tr>
+<tr>
+<td><b	>32 &nbsp&nbsp&nbsp</b></td>
+<td><b	>25 &nbsp&nbsp&nbsp</b></td>
+<td><b	>85 &nbsp&nbsp&nbsp</b></td>
+<td><b	>18 &nbsp&nbsp&nbsp</b></td>
+<td><b	>85 &nbsp&nbsp&nbsp</b></td>
+</tr>
+</table>
+</td>
+<td>   &nbsp&nbsp&nbsp     =     &nbsp&nbsp&nbsp     </td>
+<td>
+<b> Matriz C  </b> 			<table class="default">
+<tr>
+<td><b	>72 &nbsp&nbsp&nbsp</b></td>
+<td><b	>80 &nbsp&nbsp&nbsp</b></td>
+<td><b	>138 &nbsp&nbsp&nbsp</b></td>
+<td><b	>111 &nbsp&nbsp&nbsp</b></td>
+<td><b	>59 &nbsp&nbsp&nbsp</b></td>
+</tr>
+<tr>
+<td><b	>86 &nbsp&nbsp&nbsp</b></td>
+<td><b	>-7 &nbsp&nbsp&nbsp</b></td>
+<td><b	>171 &nbsp&nbsp&nbsp</b></td>
+<td><b	>175 &nbsp&nbsp&nbsp</b></td>
+<td><b	>-25 &nbsp&nbsp&nbsp</b></td>
+</tr>
+<tr>
+<td><b	>150 &nbsp&nbsp&nbsp</b></td>
+<td><b	>136 &nbsp&nbsp&nbsp</b></td>
+<td><b	>220 &nbsp&nbsp&nbsp</b></td>
+<td><b	>117 &nbsp&nbsp&nbsp</b></td>
+<td><b	>250 &nbsp&nbsp&nbsp</b></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+<br>
+<br>
+<b>Y se imprimio el resultado de la suma de estas matrices siendo el mensaje encriptado.</b>
+<br>
+<br>
+<b>El mensaje ecnriptado es:</b>
+<br>
+<b>72 	 </b><b>86 	 </b><b>150 	 </b><b>80 	 </b><b>-7 	 </b><b>136 	 </b><b>138 	 </b><b>171 	 </b><b>220 	 </b><b>111 	 </b><b>175 	 </b><b>117 	 </b><b>59 	 </b><b>-25 	 </b><b>250 	 </b><br>
+<br>
+<b>El reporte se genero el: 	</b>13/feb/2021 a las 10:50 PM 
+</body>
+</HTML>
